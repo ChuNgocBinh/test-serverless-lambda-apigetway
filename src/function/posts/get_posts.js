@@ -4,7 +4,7 @@ const getPosts = async (event) => {
     statusCode: 200,
     body: JSON.stringify(
       {
-        message: "Hello chu ngoc binh, it's get user lambda function api getway!!!!!",
+        message: "Hello chu ngoc binh, it's get post lambda function api getway!!!!!",
         input: event,
       },
       null,
