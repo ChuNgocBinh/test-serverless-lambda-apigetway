@@ -4,6 +4,8 @@
   "description": "test-serverless",
   "main": "index.js",
   "scripts": {
+    "built": "serverless deploy",
+    "dev": "serverless offline",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -12,6 +14,7 @@
     "serverless-offline": "^12.0.4"
   },
   "dependencies": {
+    "jsonwebtoken": "^9.0.0",
     "uuid": "^9.0.0"
   }
 }
