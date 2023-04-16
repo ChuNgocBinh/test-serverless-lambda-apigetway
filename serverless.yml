@@ -1,0 +1,28 @@
+service: aws-node-http-api-project
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  lambdaHashingVersion: '20201221'
+  region: ap-southeast-1
+
+functions:
+  getUser:
+    handler: src/function/users/get_user.getUser
+    events:
+      - http:
+          path: /user
+          method: get
+  postUser:
+    handler: src/function/users/post_user.postUser
+    events:
+      - http:
+          path: /user
+          method: post
+  getPosts:
+    handler: src/function/posts/get_posts.getPosts
+    events:
+      - http:
+          path: /posts
+          method: get
